@@ -1,0 +1,39 @@
+
+
+
+nav {
+  position: fixed;
+  z-index: 1;
+  height: 120px;
+  width: 100%;
+  background-color: #27474E;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav span {
+  font-family: 'Bungee', cursive;
+  margin: 1em;
+  font-size: 55px;
+  position: relative;
+  top: -0.2em;
+}
+
+.newTweet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 28px;
+  margin-right: 2em;
+  margin-top: 1.5em;
+}
+
+nav p {
+  margin: 0;
+}
+
+nav i {
+  color: #7A6962;
+}
+

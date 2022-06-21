@@ -1,0 +1,148 @@
+/* Below are the styles for the tweet box */
+section h2 {
+  margin-left: 5%;
+  font-size: 170%;
+  margin-bottom: 0.5em;
+}
+
+main form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+main textarea {
+  border-bottom: 5px solid #545149;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  resize: none;
+}
+
+main textarea:focus, input:focus{
+  outline: none;
+}
+
+
+div.tweetControl {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Bungee', cursive;
+  margin-top: 13px;
+}
+
+div.tweetControl output.negative {
+  font-size: larger;
+  color: red;
+}
+
+div.tweetControl output {
+  font-size: larger;
+}
+
+
+
+div.tweetControl button {
+  padding: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #566e72;
+  color: rgb(255, 237, 219);
+  border-radius: 10px;
+  cursor:pointer;
+}
+
+div.tweetControl button:hover {
+  background-color: #b86060;
+  cursor:pointer;
+}
+
+
+
+/* Below are the styles for the posted tweet */
+
+
+section.postedTweetBox article {
+  border: #545149 5px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 3em;
+}
+
+section.postedTweetBox article:hover {
+  box-shadow: 8px 8px #3b5f68;
+}
+
+section.postedTweetBox header {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: -1em;
+}
+
+
+section.postedTweetBox div.userDisplay {
+  display: flex;
+  flex-direction: row;
+}
+
+section.postedTweetBox div.userDisplay p.userName {
+  margin-left: 22px;
+}
+
+
+
+section.postedTweetBox div.userDisplayWithAt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 165%;
+}
+
+section.postedTweetBox div.userAt {
+  color: #888681;
+}
+
+
+
+section.postedTweetBox footer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+section.postedTweetBox p.tweetContent {
+  border-bottom: 5px solid #545149;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: auto;
+  padding-bottom: 0.5em;
+  resize: none;
+}
+
+
+div.emojiButton p button {
+  background-color: transparent;
+  border: none;
+  color: #3b5f68;
+  cursor:pointer;
+}
+
+div.emojiButton p button:hover {
+  color: #9e5959;
+  cursor:pointer;
+}
