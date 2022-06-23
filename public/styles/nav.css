@@ -1,5 +1,3 @@
-
-
 /* default style. Above 1024px in desktop view */
 nav {
   position: fixed;
@@ -52,55 +50,11 @@ nav i:hover {
 
 
 
-/* tablet style. Above under 1024px in tablet view */
+/* tablet style. under 1024px in tablet view */
 @media screen and (max-width: 1024px) {
   
   nav {
     position: absolute;
-    z-index: 1;
-    height: 120px;
-    width: 100%;
     background-color: transparent;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
   }
-  
-  nav span {
-    font-family: 'Bungee', cursive;
-    margin: 1em;
-    font-size: 55px;
-    position: relative;
-    top: -0.2em;
-  }
-  
-  .newTweet {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 28px;
-    margin-right: 2em;
-    margin-top: 1.5em;
-  }
-  
-  nav p {
-    margin: 0;
-  }
-  
-  nav i {
-    color: #eb5b37;
-    margin-top: 5px;
-  }
-  
-  nav i:hover {
-    animation: bounce2 1s infinite;
-    cursor: pointer;
-  }
-  
-  @keyframes bounce2 {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-    40% {transform: translateY(10px);}
-    60% {transform: translateY(7px);}
-  }
-
 }

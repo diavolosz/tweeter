@@ -1,12 +1,5 @@
-
-
-
-
 /* default style. Above 1024px in desktop view */
-
 /* Below are the styles for the tweet box */
-
-
 section h2 {
   margin-left: 35%;
   font-size: 170%;
@@ -34,7 +27,6 @@ main textarea:focus, input:focus{
   outline: none;
 }
 
-
 div.tweetControl {
   display: flex;
   flex-direction: row;
@@ -52,8 +44,6 @@ div.tweetControl output {
   font-size: larger;
 }
 
-
-
 div.tweetControl button {
   padding: 7px;
   padding-left: 15px;
@@ -70,7 +60,6 @@ div.tweetControl button:hover {
 }
 
 /* Below are styles for error display */
-
 div.hiddenError {
   background-color: rgb(155, 33, 33);
   color: aliceblue;
@@ -96,8 +85,6 @@ div.hiddenError h3 i{
 }
 
 /* Below are the styles for the posted tweet */
-
-
 section.postedTweetBox article {
   border: #545149 5px solid;
   background-color: #e9edc9;
@@ -108,7 +95,6 @@ section.postedTweetBox article {
   margin-left: auto;
   margin-bottom: 3em;
   border-radius: 25px;
-
 }
 
 section.postedTweetBox article:hover {
@@ -124,7 +110,6 @@ section.postedTweetBox header {
   margin-bottom: -1em;
 }
 
-
 section.postedTweetBox div.userDisplay {
   display: flex;
   flex-direction: row;
@@ -135,7 +120,6 @@ section.postedTweetBox div.userDisplay p.userName {
   position: relative;
   top: 10px;
 }
-
 
 section.postedTweetBox div.userDisplayWithAt {
   display: flex;
@@ -157,7 +141,6 @@ section.postedTweetBox footer {
   justify-content: space-between;
 }
 
-
 section.postedTweetBox p.tweetContent {
   border-bottom: 5px solid #545149;
   background-color: transparent;
@@ -170,7 +153,6 @@ section.postedTweetBox p.tweetContent {
   resize: none;
   word-wrap: break-word;
 }
-
 
 div.emojiButton p button {
   background-color: transparent;
@@ -186,7 +168,6 @@ div.emojiButton p button:hover {
 
 
 /* below are the styles for scrollup button */
-
 i#scrollUp {
   position: fixed;
   z-index: 2;
@@ -216,221 +197,41 @@ i#scrollUp:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* tablet style. Above under 1024px in tablet view */
+/* tablet style. under 1024px in tablet view */
 @media screen and (max-width: 1024px) {
   /* Below are the styles for the tweet box */
   section h2 {
     margin-left: 5%;
-    font-size: 170%;
-    margin-bottom: 0.5em;
   }
 
   main form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 90%;
     margin: auto;
   }
 
-  main textarea {
-    border-bottom: 5px solid #545149;
-    background-color: transparent;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    resize: none;
-  }
-
-  main textarea:focus, input:focus{
-    outline: none;
-  }
-
-
-  div.tweetControl {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-family: 'Bungee', cursive;
-    margin-top: 13px;
-  }
-
-  div.tweetControl output.negative {
-    font-size: larger;
-    color: red;
-  }
-
-  div.tweetControl output {
-    font-size: larger;
-  }
-
-
-
-  div.tweetControl button {
-    padding: 7px;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: #566e72;
-    color: rgb(255, 237, 219);
-    border-radius: 10px;
-    cursor:pointer;
-  }
-
-  div.tweetControl button:hover {
-    background-color: #b86060;
-    cursor:pointer;
-  }
 
   /* Below are styles for error display */
-
   div.hiddenError {
-    background-color: rgb(155, 33, 33);
-    color: aliceblue;
     width: 90%;
     margin: auto;
-    margin-top: 1em;
-    border-radius: 15px;
   }
 
-  div.hiddenError h3{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-top: 12px;
-    margin-bottom: 12px;
-  }
-
-  div.hiddenError h3 i{
-    position: relative;
-    top: 2.5px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
 
   /* Below are the styles for the posted tweet */
-
-
   section.postedTweetBox article {
-    border: #545149 5px solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 90%;
     margin: auto;
     margin-bottom: 3em;
   }
 
-  section.postedTweetBox article:hover {
-    box-shadow: 8px 8px #3b5f68;
-  }
-
-  section.postedTweetBox header {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: -1em;
-  }
-
-
-  section.postedTweetBox div.userDisplay {
-    display: flex;
-    flex-direction: row;
-  }
-
-  section.postedTweetBox div.userDisplay p.userName {
-    margin-left: 22px;
-    position: relative;
-    top: 10px;
-  }
-
-
-  section.postedTweetBox div.userDisplayWithAt {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 165%;
-    margin-bottom: -0.5em;
-  }
-
   section.postedTweetBox div.handle {
     margin-top: 20px;
-    color: #888681;
     font-size: smaller;
   }
 
 
-  section.postedTweetBox footer {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-  }
-
-
-  section.postedTweetBox p.tweetContent {
-    border-bottom: 5px solid #545149;
-    background-color: transparent;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    margin-top: auto;
-    margin-bottom: -0.5em;
-    padding-bottom: 0.5em;
-    resize: none;
-    word-wrap: break-word;
-  }
-
-
-  div.emojiButton p button {
-    background-color: transparent;
-    border: none;
-    color: #3b5f68;
-    cursor:pointer;
-  }
-
-  div.emojiButton p button:hover {
-    color: #9e5959;
-    cursor:pointer;
-  }
-
-
   /* below are the styles for scrollup button */
-
   i#scrollUp {
-    position: fixed;
-    z-index: 2;
     left: 85%;
-    top: 85%;
-    border: none;
-    color: #b86060;
-    font-size: 350%
-  }
-
-  i#scrollUp:hover {
-    animation: bounce 1s infinite;
-    cursor: pointer;
-  }
-
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-    40% {transform: translateY(-20px);}
-    60% {transform: translateY(-12px);}
   }
 }
