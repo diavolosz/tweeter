@@ -22,7 +22,11 @@ Upon entering and submitting a tweet, user will retrieve an updated tweets colle
 
 ## Final Product
 
+### desktop compatible view
 !["desktop compatible view"](https://github.com/diavolosz/tweeter/blob/master/screenshots/desktop.png)
+### tweet entry box
 !["tweet entry box"](https://github.com/diavolosz/tweeter/blob/master/screenshots/tweetentry.png)
+### error example
 !["error example"](https://github.com/diavolosz/tweeter/blob/master/screenshots/error.png)
+### tablet compatible view
 !["tablet compatible view"](https://github.com/diavolosz/tweeter/blob/master/screenshots/tabletsize.png)
