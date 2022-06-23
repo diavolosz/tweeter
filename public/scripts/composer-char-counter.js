@@ -6,18 +6,15 @@
 
 $(document).ready(function() {
 
-  let newTweet = document.querySelector("#tweet-text")
-  newTweet.addEventListener("focus", () => {
-    console.log("clicked tweet area")
-  })
+  // let newTweet = document.querySelector("#tweet-text")
+  // newTweet.addEventListener("focus", () => {
+  //   console.log("clicked tweet area")
+  // })
 
-  newTweet.addEventListener("blur", () => {
-    console.log("left tweet are")
-  })
+  // newTweet.addEventListener("blur", () => {
+  //   console.log("left tweet are")
+  // })
 
-  // counter for maximum input tweet character
-
-  // let counter = $(".counter").val()
 
 
   $("#tweet-text").on("input", function() {

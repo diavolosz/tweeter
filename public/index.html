@@ -29,6 +29,7 @@
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- AwesomeFont -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -66,6 +67,15 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
+
+        <div class="hiddenError">
+          <h3>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span></span> 
+            <i class="fa-solid fa-circle-exclamation"></i>
+          </h3>
+        </div>
+
         <h2>Compose Tweet</h2>
 
         <form method="POST" action="/tweets">
@@ -85,38 +95,7 @@
 
       <section class="postedTweetBox">
 
-        <article>
-          <header class="postedTweetUser">
-            <div class="userDisplayWithAt">
-              <div class="userDisplay">
-                <p class="icon"><i class="fa-solid fa-kiwi-bird"></i></p>
-                <p class="userName">Not Kiwi</p>
-              </div>
-              <div class="userAt">
-                <p><strong>@NotAKiwi</strong></p>
-              </div>
-            </div>
-            <p class="tweetContent">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, harum eos eius nesciunt fuga recusandae ipsum error quam dolorum dolores molestiae sunt expedita, sequi rerum ex accusantium quo reiciendis labore!
-            <p>
-          </header>
-          <footer class="postedTweetFooter">
-            <div class="datePosted">
-              <p><strong>10 days ago</strong></p>
-            </div>
-    
-            <div class="emojiButton">
-              <p>
-                <button class="flag"><i class="fa-solid fa-flag"></i></button>
-                <button class="retweet"><i class="fa-solid fa-retweet"></i></button>
-                <button class="like"><i class="fa-solid fa-heart"></i></button> 
-              </p>
-            </div>
-          </footer>
-        </article>
-
-
-        <article>
+        <!-- <article>
           <header class="postedTweetUser">
             <div class="userDisplayWithAt">
               <div class="userDisplay">
@@ -144,39 +123,8 @@
               </p>
             </div>
           </footer>
-        </article>
+        </article> -->
 
-
-
-        <article>
-          <header class="postedTweetUser">
-            <div class="userDisplayWithAt">
-              <div class="userDisplay">
-                <p class="icon"><i class="fa-solid fa-kiwi-bird"></i></p>
-                <p class="userName">Really Kiwi</p>
-              </div>
-              <div class="userAt">
-                <p><strong>@ReallyAKiwi</strong></p>
-              </div>
-            </div>
-            <p class="tweetContent">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, harum eos eius nesciunt fuga recusandae ipsum error quam dolorum dolores molestiae sunt expedita, sequi rerum ex accusantium quo reiciendis labore!
-            <p>
-          </header>
-          <footer class="postedTweetFooter">
-            <div class="datePosted">
-              <p><strong>12 days ago</strong></p>
-            </div>
-    
-            <div class="emojiButton">
-              <p>
-                <button class="flag"><i class="fa-solid fa-flag"></i></button>
-                <button class="retweet"><i class="fa-solid fa-retweet"></i></button>
-                <button class="like"><i class="fa-solid fa-heart"></i></button> 
-              </p>
-            </div>
-          </footer>
-        </article>
 
       </section>
     </main>

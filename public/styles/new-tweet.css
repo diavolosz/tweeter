@@ -97,6 +97,8 @@ section.postedTweetBox div.userDisplay {
 
 section.postedTweetBox div.userDisplay p.userName {
   margin-left: 22px;
+  position: relative;
+  top: 10px;
 }
 
 
@@ -106,9 +108,10 @@ section.postedTweetBox div.userDisplayWithAt {
   flex-direction: row;
   justify-content: space-between;
   font-size: 165%;
+  margin-bottom: -0.5em;
 }
 
-section.postedTweetBox div.userAt {
+section.postedTweetBox div.handle {
   color: #888681;
 }
 
@@ -129,9 +132,11 @@ section.postedTweetBox p.tweetContent {
   border-top: none;
   border-left: none;
   border-right: none;
-  margin: auto;
+  margin-top: auto;
+  margin-bottom: -0.5em;
   padding-bottom: 0.5em;
   resize: none;
+  word-wrap: break-word;
 }
 
 
@@ -145,4 +150,29 @@ div.emojiButton p button {
 div.emojiButton p button:hover {
   color: #9e5959;
   cursor:pointer;
+}
+
+
+div.hiddenError {
+  background-color: rgb(155, 33, 33);
+  color: aliceblue;
+  width: 90%;
+  margin: auto;
+  margin-top: 1em;
+  border-radius: 15px;
+}
+
+div.hiddenError h3{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+div.hiddenError h3 i{
+  position: relative;
+  top: 2.5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
