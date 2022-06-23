@@ -1,25 +1,68 @@
 
 
-
+/* default style. Above 1024px in desktop view */
 header.topProfile{
   position: relative;
-  top: 120px;
+  top: 8em;
+  margin-left: 3.5em;
   z-index: -1;
-  height: 400px;
-  width: 100%;
+  height: 22em;
+  width: 28%;
   background-color: #CD8B76;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 32px;
   background-image: url(/images/beige-paper.png);
 }
 
 header h2 {
   position: relative;
   z-index: 1;
-  margin-top: 0;
+  margin: -25px 20px;
+  font-size: 2.8em;
+  word-wrap: break-word;
+  text-align: center;
 }
 
 .iconAvatar {
-  margin-top: 1.2em;
+  margin-top: 3.5em;
+}
+
+
+
+
+
+
+
+
+
+/* tablet style. Above under 1024px in tablet view */
+@media screen and (max-width: 1024px){
+
+  header.topProfile{
+    position: relative;
+    margin-left: 0;
+    top: 0px;
+    z-index: -1;
+    height: 600px;
+    width: 100%;
+    background-color: #CD8B76;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/images/beige-paper.png);
+    border-radius: 0px
+  }
+  
+  header h2 {
+    position: relative;
+    z-index: 1;
+    top: 100%;
+  }
+  
+  .iconAvatar {
+    margin-top: 6.5em;
+  }
+
 }

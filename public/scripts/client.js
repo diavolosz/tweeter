@@ -155,9 +155,9 @@ $(document).ready(function() {
   $("#scrollUp").hide();
   $(document).scroll(function () {
     if ($(window).scrollTop() >= 50) {
-      $("#scrollUp").show();
+      $("#scrollUp").fadeIn(200);
     } else {
-      $("#scrollUp").hide();
+      $("#scrollUp").fadeOut(200);
     }
   })  
   let scrollUpButton = document.querySelector("#scrollUp")
