@@ -151,14 +151,22 @@ $(document).ready(function() {
   })
 
 
-  //arrow up icon on bottom right. clicked to scoll all the way to the top 
+  //arrow up icon on bottom right. clicked to scoll all the way to the top. scroll will only appear when scrolled away from top. 
+  $("#scrollUp").hide();
+  $(document).scroll(function () {
+    if ($(window).scrollTop() >= 50) {
+      $("#scrollUp").show();
+    } else {
+      $("#scrollUp").hide();
+    }
+  })  
   let scrollUpButton = document.querySelector("#scrollUp")
   scrollUpButton.addEventListener("click", () => {
     $("html, body").animate({ 
       scrollTop: 0 
     }, "slow");
-  })
-
+  })  
+  
 
   //XSS attack prevention 
   const escape = function (str) {
