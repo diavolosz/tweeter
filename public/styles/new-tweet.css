@@ -61,7 +61,31 @@ div.tweetControl button:hover {
   cursor:pointer;
 }
 
+/* Below are styles for error display */
 
+div.hiddenError {
+  background-color: rgb(155, 33, 33);
+  color: aliceblue;
+  width: 90%;
+  margin: auto;
+  margin-top: 1em;
+  border-radius: 15px;
+}
+
+div.hiddenError h3{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+div.hiddenError h3 i{
+  position: relative;
+  top: 2.5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 /* Below are the styles for the posted tweet */
 
@@ -152,27 +176,3 @@ div.emojiButton p button:hover {
   cursor:pointer;
 }
 
-
-div.hiddenError {
-  background-color: rgb(155, 33, 33);
-  color: aliceblue;
-  width: 90%;
-  margin: auto;
-  margin-top: 1em;
-  border-radius: 15px;
-}
-
-div.hiddenError h3{
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
-
-div.hiddenError h3 i{
-  position: relative;
-  top: 2.5px;
-  margin-left: 10px;
-  margin-right: 10px;
-}

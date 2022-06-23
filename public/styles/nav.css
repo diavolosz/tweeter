@@ -34,6 +34,17 @@ nav p {
 }
 
 nav i {
-  color: #7A6962;
+  color: #eb5b37;
+  margin-top: 5px;
 }
 
+nav i:hover {
+  animation: bounce 1s infinite;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(12px);}
+	60% {transform: translateY(7px);}
+}

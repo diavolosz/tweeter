@@ -77,6 +77,7 @@ $(document).ready(function() {
     return tweet
   }
 
+
   //used to loop through database and call out function to display each tweets
   const renderTweets = function(tweets) {
     tweets.forEach((tweet) => {
@@ -84,6 +85,7 @@ $(document).ready(function() {
       $(".postedTweetBox").prepend(tweetElement)
     })
   }
+
 
   //get request to server to load all posted tweets and display tweet
   const loadtweets = function() {
@@ -127,8 +129,9 @@ $(document).ready(function() {
     })
   })
 
+
   //hidden error messages are displayed upon triggered and hide when clicked else where
-  $('.hiddenError').hide()
+  $(".hiddenError").hide()
   const hideError = () => {
     $('.hiddenError').slideUp();
   };
@@ -138,12 +141,22 @@ $(document).ready(function() {
   };
   document.addEventListener("click", () => {hideError()})
 
+
+  $(".new-tweet").hide()
+  let navIcon = document.querySelector(".bounce")
+  navIcon.addEventListener("click", () => {
+    $(".new-tweet").slideToggle()
+  })
+
+
   //XSS attack prevention 
   const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
+
+
 })
 
 
