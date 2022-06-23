@@ -1,9 +1,3 @@
-
-
-
-
-
-
 $(document).ready(function() {
 
   $("#tweet-text").on("input", function() {

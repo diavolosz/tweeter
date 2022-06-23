@@ -109,12 +109,12 @@ $(document).ready(function() {
     const tweetInput = $("#tweet-text").val()
   
     if (tweetInput.length > 140) {
-      showError("Your tweet is wayyy tooo longgg")
+      showError("Your Tweet Is Wayyy Tooo Longgg")
       return
     }
 
     if(tweetInput.trim() == '') {
-      showError("Cannot submit empty tweet")
+      showError("Cannot Submit Empty Tweet")
       return;
     }
 
@@ -124,6 +124,7 @@ $(document).ready(function() {
       data: $("form").serialize(), 
       success: () => {
         $("#tweet-text").val("")
+        $("output.counter").val(140)
         loadtweets()
       }
     })
@@ -142,10 +143,20 @@ $(document).ready(function() {
   document.addEventListener("click", () => {hideError()})
 
 
+  //hide tweet entry box until bav icon arrow down is clicked. entry box will then be displayed 
   $(".new-tweet").hide()
   let navIcon = document.querySelector(".bounce")
   navIcon.addEventListener("click", () => {
     $(".new-tweet").slideToggle()
+  })
+
+
+  //arrow up icon on bottom right. clicked to scoll all the way to the top 
+  let scrollUpButton = document.querySelector("#scrollUp")
+  scrollUpButton.addEventListener("click", () => {
+    $("html, body").animate({ 
+      scrollTop: 0 
+    }, "slow");
   })
 
 

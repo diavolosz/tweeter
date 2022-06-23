@@ -176,3 +176,26 @@ div.emojiButton p button:hover {
   cursor:pointer;
 }
 
+
+/* below are the styles for scrollup button */
+
+i#scrollUp {
+  position: fixed;
+  z-index: 2;
+  left: 85%;
+  top: 85%;
+  border: none;
+  color: #b86060;
+  font-size: 350%
+}
+
+i#scrollUp:hover {
+  animation: bounce 1s infinite;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-20px);}
+	60% {transform: translateY(-12px);}
+}

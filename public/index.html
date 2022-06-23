@@ -63,6 +63,7 @@
       </div>
     </header>
 
+    <i id="scrollUp" class="fa-solid fa-circle-chevron-up"></i>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
@@ -79,9 +80,7 @@
 
         <form method="POST" action="/tweets">
           <label for="tweet-text"><strong>What are you humming about?</strong></label>
-          
-          <textarea name="text" id="tweet-text"></textarea>
-          
+          <textarea name="text" id="tweet-text"></textarea>  
           <div class="tweetControl">
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
@@ -93,38 +92,6 @@
       <br>
 
       <section class="postedTweetBox">
-
-        <!-- <article>
-          <header class="postedTweetUser">
-            <div class="userDisplayWithAt">
-              <div class="userDisplay">
-                <p class="icon"><i class="fa-solid fa-kiwi-bird"></i></p>
-                <p class="userName">Probably Kiwi</p>
-              </div>
-              <div class="userAt">
-                <p><strong>@MightBeAKiwi</strong></p>
-              </div>
-            </div>
-            <p class="tweetContent">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, harum eos eius nesciunt fuga recusandae ipsum error quam dolorum dolores molestiae sunt expedita, sequi rerum ex accusantium quo reiciendis labore!
-            <p>
-          </header>
-          <footer class="postedTweetFooter">
-            <div class="datePosted">
-              <p><strong>12 days ago</strong></p>
-            </div>
-    
-            <div class="emojiButton">
-              <p>
-                <button class="flag"><i class="fa-solid fa-flag"></i></button>
-                <button class="retweet"><i class="fa-solid fa-retweet"></i></button>
-                <button class="like"><i class="fa-solid fa-heart"></i></button> 
-              </p>
-            </div>
-          </footer>
-        </article> -->
-
-
       </section>
     </main>
 
